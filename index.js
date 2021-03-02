@@ -2,7 +2,10 @@
 
 const driver = { name: 'Sam' };
 
+
 //created new object
+
+
 
 function updateDriverWithKeyAndValue(obj, key, value) {
   return Object.assign({}, obj, { [key]: value });
@@ -17,6 +20,7 @@ function destructivelyUpdateDriverWithKeyAndValue (obj, key, value) {
 //the empty {} in nondestructive is an empty object, so no overwrite, makes new Object
 
 function deleteFromDriverByKey(obj, key){
+
   const newDriv = Object.assign({}, obj[key]);
   delete newDriv[key];
   return newDriv;
@@ -27,4 +31,6 @@ function destructivelyDeleteFromDriverByKey(obj, key) {
   return obj;
 }
 
-//only bracket notation works for the above two, because dynamic
+//only bracket notation work here, dynamic
+
+
